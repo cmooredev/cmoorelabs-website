@@ -1,9 +1,10 @@
 <script>
   let projects = [
     {
-      title: "Knights of the Ether",
+      title: "Merlyn Labs - Knights of the Ether",
       url: "https://mint.knightsoftheether.com",
-      description: "Web3 trading card game with blockchain integration",
+      description:
+        "Lead Front End Engineer. Latest project: Web3 trading card game with blockchain integration", // Updated description
       tag: "current",
     },
     {
