@@ -34,7 +34,7 @@
 
 <main>
   <nav>
-    <div class="logo">CM</div>
+    <div class="logo">cmoorelabs</div>
     <div class="nav-links">
       <a href="#home" on:click={scrollToSection}>Home</a>
       <a href="#projects" on:click={scrollToSection}>Projects</a>
@@ -82,7 +82,7 @@
     <p><a href="mailto:cmoorelabs@gmail.com">cmoorelabs@gmail.com</a></p>
     <p>
       <a href="https://github.com/cmooredev" target="_blank">GitHub</a>
-      <a href="https://www.youtube.com/cmoorelabs" target="_blank">YouTube</a>
+      <a href="https://www.youtube.com/@cmoorelabs" target="_blank">YouTube</a>
     </p>
   </section>
 </main>
