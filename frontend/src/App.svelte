@@ -221,5 +221,27 @@
     .intro p {
       font-size: 1rem;
     }
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo {
+      display: none;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .nav-links a {
+      margin: 0.5rem;
+      font-size: 1.3rem;
+    }
   }
 </style>
