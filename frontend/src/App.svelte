@@ -49,7 +49,10 @@
     </div>
     <div class="intro">
       <p>Building web solutions that work.</p>
-      <p>Expertise: React, Node.js, TypeScript, GraphQL, AWS</p>
+      <p>
+        Expertise: React, Node.js, TypeScript, Python, Machine Learning,
+        GraphQL, AWS
+      </p>
     </div>
   </section>
 
