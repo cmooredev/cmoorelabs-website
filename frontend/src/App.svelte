@@ -60,7 +60,7 @@
     <h2>Experience</h2>
     <div class="job">
       <h3>Merlyn Labs - Lead Front End Developer</h3>
-      <p class="date">July 2023 – Present</p>
+      <p class="date">July 2023 -- Present</p>
       <ul>
         <li>
           Designed and maintained front end of an online trading card game using
@@ -72,13 +72,17 @@
     </div>
     <div class="job">
       <h3>Stealth Startup - Full Stack Engineer</h3>
-      <p class="date">June 2024 – Present</p>
+      <p class="date">June 2024 -- Present</p>
       <ul>
         <li>
           Led development of a mobile application using React Native and
           TypeScript
         </li>
-        <li>Architected PostgreSQL databases and engineered backend systems</li>
+        <li>
+          Architected PostgreSQL databases and engineered backend systems in
+          Python
+        </li>
+        <!-- Updated description -->
       </ul>
     </div>
   </section>
@@ -139,7 +143,7 @@
     padding: 1rem 0;
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(20px);
     z-index: 1000;
   }
@@ -205,6 +209,15 @@
     color: #86868b;
   }
 
+  #experience ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  #experience li {
+    margin-bottom: 0.5rem;
+  }
+
   #projects {
     margin-top: 2rem;
   }
@@ -252,8 +265,8 @@
     nav {
       flex-direction: column;
       align-items: center;
+      width: 100%; /* Ensure nav spans full width */
     }
-
     .logo {
       display: none;
     }
