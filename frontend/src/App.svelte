@@ -4,7 +4,7 @@
       title: "Merlyn Labs - Knights of the Ether",
       url: "https://mint.knightsoftheether.com",
       description:
-        "Lead Front End Engineer. Latest project: Web3 trading card game with blockchain integration.",
+        "Led front-end development of a Web3 trading card game. Implemented React components for game UI, integrated blockchain functionality, and optimized performance.",
       tag: "current",
     },
     {
@@ -21,13 +21,33 @@
     },
   ];
 
+  let youtubeProjects = [
+    {
+      title:
+        "Building a Simple JavaScript Multiplayer Browser Game with Svelte and Socket.IO",
+      playlistId: "PLx9e6Ldz3n4kXS5h-oM8wm1TVw1mn9S8n",
+      description: [
+        "Series on creating a multiplayer browser game using Svelte for the frontend, Express and Socket.IO for real-time multiplayer, and MongoDB for data persistence.",
+        "Features include multiplayer sessions, game rooms for 2 players, and auto-matching.",
+        "Implements enemy waves, boss fights, weapon upgrades, and highscores.",
+      ],
+    },
+  ];
+
   function scrollToSection(event) {
     event.preventDefault();
     const target = event.target.getAttribute("href");
+
+    const remValue =
+      4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+
     if (target === "#home") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
-      document.querySelector(target).scrollIntoView({ behavior: "smooth" });
+      const targetElement = document.querySelector(target);
+      const offsetPosition =
+        targetElement.getBoundingClientRect().top + window.scrollY - remValue;
+      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
     }
   }
 </script>
@@ -37,6 +57,7 @@
     <div class="logo">cmoorelabs</div>
     <div class="nav-links">
       <a href="#home" on:click={scrollToSection}>Home</a>
+      <a href="#experience" on:click={scrollToSection}>Experience</a>
       <a href="#projects" on:click={scrollToSection}>Projects</a>
       <a href="#contact" on:click={scrollToSection}>Contact</a>
     </div>
@@ -44,15 +65,16 @@
 
   <section id="home">
     <div class="hero-content">
-      <h1>Connor Moore</h1>
+      <h1 class="hero-title">Connor Moore</h1>
       <p class="role">Full Stack Developer</p>
     </div>
     <div class="intro">
-      <p>
-        Full stack developer with expertise in front-end and back-end
-        development for web and mobile applications.
-      </p>
-      <p>Proficient in React, Python, and AWS.</p>
+      <p>Full stack developer specializing in web and mobile applications.</p>
+      <p>Expert in React, Python, and AWS.</p>
+      <p>Currently: Lead Front End Developer at Merlyn Labs</p>
+      <a href="#youtube" class="cta-button" on:click={scrollToSection}
+        >Watch My Latest Video</a
+      >
     </div>
   </section>
 
@@ -82,7 +104,6 @@
           Engineered backend systems in Python, incorporating advanced data
           processing techniques.
         </li>
-        <!-- Updated description -->
       </ul>
     </div>
   </section>
@@ -111,12 +132,39 @@
     </ul>
   </section>
 
+  <section id="youtube">
+    <h2>Educational Content</h2>
+    {#each youtubeProjects as project}
+      <div class="video-container">
+        <h3>{project.title}</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/videoseries?list={project.playlistId}"
+          title={project.title}
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <ul>
+          {#each project.description as point}
+            <li>{point}</li>
+          {/each}
+        </ul>
+      </div>
+    {/each}
+  </section>
+
   <section id="contact">
     <h2>Contact</h2>
     <p><a href="mailto:cmoorelabs@gmail.com">cmoorelabs@gmail.com</a></p>
     <p>
       <a href="https://github.com/cmooredev" target="_blank">GitHub</a>
       <a href="https://www.youtube.com/@cmoorelabs" target="_blank">YouTube</a>
+      <a
+        href="https://www.linkedin.com/in/connor-moore-b821a017b/"
+        target="_blank">LinkedIn</a
+      >
     </p>
   </section>
 </main>
@@ -166,7 +214,9 @@
   }
 
   section {
-    margin: 6rem 0;
+    margin: 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
   }
 
   h1 {
@@ -183,11 +233,9 @@
   }
 
   h2 {
-    font-size: 2rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
   }
-
   #home {
     text-align: center;
     padding: 0;
@@ -249,6 +297,30 @@
     margin-right: 1rem;
   }
 
+  #youtube ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  #youtube li {
+    margin-bottom: 0.5rem;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: #0071e3;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+  }
+
+  .cta-button:hover {
+    background-color: #2c8dee;
+    color: white;
+  }
+
   @media (max-width: 768px) {
     h1 {
       font-size: 3rem;
@@ -265,7 +337,7 @@
     nav {
       flex-direction: column;
       align-items: center;
-      width: 100%; /* Ensure nav spans full width */
+      width: 100%;
     }
     .logo {
       display: none;
