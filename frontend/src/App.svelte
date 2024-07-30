@@ -4,7 +4,7 @@
       title: "Merlyn Labs - Knights of the Ether",
       url: "https://mint.knightsoftheether.com",
       description:
-        "Lead Front End Engineer. Latest project: Web3 trading card game with blockchain integration", // Updated description
+        "Lead Front End Engineer. Latest project: Web3 trading card game with blockchain integration.",
       tag: "current",
     },
     {
@@ -64,10 +64,10 @@
       <ul>
         <li>
           Designed and maintained front end of an online trading card game using
-          React
+          React.
         </li>
-        <li>Managed AWS infrastructure setup and maintenance</li>
-        <li>Improved automated workflows and testing</li>
+        <li>Managed AWS infrastructure setup and maintenance.</li>
+        <li>Improved automated workflows and testing.</li>
       </ul>
     </div>
     <div class="job">
@@ -76,11 +76,11 @@
       <ul>
         <li>
           Led development of a mobile application using React Native and
-          TypeScript
+          TypeScript.
         </li>
         <li>
-          Architected PostgreSQL databases and engineered backend systems in
-          Python
+          Engineered backend systems in Python, incorporating advanced data
+          processing techniques.
         </li>
         <!-- Updated description -->
       </ul>
