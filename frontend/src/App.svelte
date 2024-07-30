@@ -48,11 +48,38 @@
       <p class="role">Full Stack Developer</p>
     </div>
     <div class="intro">
-      <p>Building web solutions that work.</p>
       <p>
-        Expertise: React, Node.js, TypeScript, Python, Machine Learning,
-        GraphQL, AWS
+        Full stack developer with expertise in front-end and back-end
+        development for web and mobile applications.
       </p>
+      <p>Proficient in React, Python, and AWS.</p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="job">
+      <h3>Merlyn Labs - Lead Front End Developer</h3>
+      <p class="date">July 2023 – Present</p>
+      <ul>
+        <li>
+          Designed and maintained front end of an online trading card game using
+          React
+        </li>
+        <li>Managed AWS infrastructure setup and maintenance</li>
+        <li>Improved automated workflows and testing</li>
+      </ul>
+    </div>
+    <div class="job">
+      <h3>Stealth Startup - Full Stack Engineer</h3>
+      <p class="date">June 2024 – Present</p>
+      <ul>
+        <li>
+          Led development of a mobile application using React Native and
+          TypeScript
+        </li>
+        <li>Architected PostgreSQL databases and engineered backend systems</li>
+      </ul>
     </div>
   </section>
 
