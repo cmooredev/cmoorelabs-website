@@ -322,38 +322,44 @@
   }
 
   @media (max-width: 768px) {
+    main {
+      padding: 0 1rem;
+    }
+
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
 
     .role {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
     }
 
     .intro p {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     nav {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-    .logo {
-      display: none;
-    }
-
-    .nav-links {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
+      padding: 0.5rem 0;
     }
 
     .nav-links a {
-      margin: 0.5rem;
-      font-size: 1.3rem;
+      margin: 0.25rem;
+      font-size: 1rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+    }
+
+    #home {
+      height: auto;
+      padding: 2rem 0;
     }
   }
 </style>
