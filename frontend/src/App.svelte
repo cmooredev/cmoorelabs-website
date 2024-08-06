@@ -69,8 +69,7 @@
       <p class="role">Full Stack Developer</p>
     </div>
     <div class="intro">
-      <p>Full stack developer specializing in web and mobile applications.</p>
-      <p>Expert in React, Python, and AWS.</p>
+      <p>Specializing in web and mobile applications.</p>
       <p>Currently: Lead Front End Developer at Merlyn Labs</p>
       <a href="#youtube" class="cta-button" on:click={scrollToSection}
         >Watch My Latest Video</a
@@ -403,7 +402,8 @@
     }
 
     #home {
-      padding: 2rem 0;
+      height: 75vh;
+      margin-top: 200px;
       justify-content: flex-start;
     }
     .hero-content {
