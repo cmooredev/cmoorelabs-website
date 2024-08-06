@@ -1,6 +1,13 @@
 <script>
   let projects = [
     {
+      title: "crackdTA - Intelligent Study Assistant",
+      url: "https://crackdta.com",
+      description:
+        "Developing a comprehensive study aid tool with features like note-taking, multimedia embedding, real-time collaboration, and AI-powered quizzes. Designed to enhance learning experiences and streamline study sessions.",
+      tag: "personal",
+    },
+    {
       title: "Merlyn Labs - Knights of the Ether",
       url: "https://mint.knightsoftheether.com",
       description:
@@ -57,8 +64,8 @@
     <div class="logo">cmoorelabs</div>
     <div class="nav-links">
       <a href="#home" on:click={scrollToSection}>Home</a>
-      <a href="#experience" on:click={scrollToSection}>Experience</a>
       <a href="#projects" on:click={scrollToSection}>Projects</a>
+      <a href="#experience" on:click={scrollToSection}>Experience</a>
       <a href="#contact" on:click={scrollToSection}>Contact</a>
     </div>
   </nav>
@@ -75,6 +82,30 @@
         >Watch My Latest Video</a
       >
     </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <h3>Current Work</h3>
+    <ul>
+      {#each projects.filter((p) => p.tag === "current") as project}
+        <li>
+          <a href={project.url} target="_blank">{project.title}</a>
+          <br />
+          <i>{project.description}</i>
+        </li>
+      {/each}
+    </ul>
+    <h3>Personal Projects</h3>
+    <ul>
+      {#each projects.filter((p) => p.tag === "personal") as project}
+        <li>
+          <a href={project.url} target="_blank">{project.title}</a>
+          <br />
+          <i>{project.description}</i>
+        </li>
+      {/each}
+    </ul>
   </section>
 
   <section id="experience">
@@ -105,30 +136,6 @@
         </li>
       </ul>
     </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <h3>Current Work</h3>
-    <ul>
-      {#each projects.filter((p) => p.tag === "current") as project}
-        <li>
-          <a href={project.url} target="_blank">{project.title}</a>
-          <br />
-          <i>{project.description}</i>
-        </li>
-      {/each}
-    </ul>
-    <h3>Personal Projects</h3>
-    <ul>
-      {#each projects.filter((p) => p.tag === "personal") as project}
-        <li>
-          <a href={project.url} target="_blank">{project.title}</a>
-          <br />
-          <i>{project.description}</i>
-        </li>
-      {/each}
-    </ul>
   </section>
 
   <section id="youtube">
@@ -251,7 +258,7 @@
   }
 
   .hero-content {
-    margin-top:0px;
+    margin-top: 0px;
     top: 0;
   }
 
@@ -311,14 +318,14 @@
   }
 
   .cta-button {
-  display: inline-block;
-  background-color: #0071e3;
-  color: white;
-  padding: 0.75rem 1.2rem;
-  border-radius: 25px;
-  margin-top: 1rem;
-  transition: background-color 0.2s ease;
-}
+    display: inline-block;
+    background-color: #0071e3;
+    color: white;
+    padding: 0.75rem 1.2rem;
+    border-radius: 25px;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+  }
 
   .cta-button:hover {
     background-color: #2c8dee;
@@ -342,7 +349,6 @@
   }
 
   @media (max-width: 768px) {
-
     main {
       padding: 0 1rem;
     }
@@ -385,5 +391,4 @@
       max-height: -webkit-fill-available;
     }
   }
-
 </style>
