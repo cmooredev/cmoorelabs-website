@@ -319,18 +319,12 @@
 
   .cta-button {
     display: inline-block;
-    background-color: #0071e3;
-    color: white;
     padding: 0.75rem 1.2rem;
     border-radius: 25px;
     margin-top: 1rem;
-    transition: background-color 0.2s ease;
+ 
   }
 
-  .cta-button:hover {
-    background-color: #2c8dee;
-    color: white;
-  }
 
   .video-container {
     position: relative;
