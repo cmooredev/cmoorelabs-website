@@ -250,6 +250,11 @@
     color: #86868b;
   }
 
+  .hero-content {
+    margin-top:0px;
+    top: 0;
+  }
+
   .intro p {
     max-width: 600px;
     margin: 0.5rem auto;
@@ -306,14 +311,14 @@
   }
 
   .cta-button {
-    display: inline-block;
-    background-color: #0071e3;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
-    margin-top: 1rem;
-    transition: background-color 0.2s ease;
-  }
+  display: inline-block;
+  background-color: #0071e3;
+  color: white;
+  padding: 0.75rem 1.2rem;
+  border-radius: 25px;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+}
 
   .cta-button:hover {
     background-color: #2c8dee;
@@ -337,6 +342,7 @@
   }
 
   @media (max-width: 768px) {
+
     main {
       padding: 0 1rem;
     }
@@ -376,42 +382,8 @@
     }
 
     #home {
-      padding: 2rem 0;
+      max-height: -webkit-fill-available;
     }
   }
-  @media (max-width: 1024px) {
-    .logo {
-      display: none;
-    }
 
-    nav {
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 0;
-    }
-
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      margin: 0.5rem;
-    }
-
-    #home {
-      height: 75vh;
-      margin-top: 200px;
-      justify-content: flex-start;
-    }
-    .hero-content {
-      margin-top: 1rem;
-    }
-
-    .intro {
-      margin-top: 2rem;
-    }
-  }
 </style>
