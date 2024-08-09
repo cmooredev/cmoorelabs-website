@@ -11,7 +11,6 @@
   <Nav />
   <Home />
   <Projects />
-  <Experience />
   <YouTube />
   <Contact />
 </main>

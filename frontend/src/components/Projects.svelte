@@ -23,6 +23,8 @@
       url: "https://github.com/cmooredev/RepoReader",
       description: "NLP-powered code search and analysis tool",
       tag: "personal",
+      youtubeEmbed:
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/gz9-QhpwYTs?si=U1XJ-uDaeZSRryD-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     },
     {
       title: "Discord Translation Bot",
@@ -88,6 +90,12 @@
               class="nav-button next"
               aria-label="Next image">&gt;</button
             >
+          </div>
+        {/if}
+
+        {#if project.youtubeEmbed}
+          <div class="youtube-embed-container">
+            {@html project.youtubeEmbed}
           </div>
         {/if}
 
@@ -179,6 +187,14 @@
 
   .nav-button:focus {
     outline: none;
+  }
+
+  .youtube-embed-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    width: 100%;
   }
 
   @media (max-width: 768px) {
