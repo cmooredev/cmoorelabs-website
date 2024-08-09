@@ -15,7 +15,7 @@
       title: "crackdTA - Intelligent Study Assistant",
       url: "https://crackdta.com",
       description:
-        "Developing a comprehensive study aid tool with features like note-taking, multimedia embedding, real-time collaboration, and AI-powered quizzes. Designed to enhance learning experiences and streamline study sessions.",
+        "Comprehensive study aid tool with features like note-taking, multimedia embedding, real-time collaboration, and AI-powered quizzes.",
       tag: "personal",
     },
     {
@@ -27,10 +27,17 @@
         '<iframe width="560" height="315" src="https://www.youtube.com/embed/gz9-QhpwYTs?si=U1XJ-uDaeZSRryD-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
     },
     {
-      title: "Discord Translation Bot",
-      url: "https://github.com/cmooredev/Translator",
-      description: "Multilingual communication facilitator",
+      title: "Multiplayer Browser Game",
+      url: "https://www.youtube.com/playlist?list=PLx9e6Ldz3n4kXS5h-oM8wm1TVw1mn9S8n",
+      description:
+        "Series on creating a multiplayer browser game using Svelte, Express, Socket.IO, and MongoDB.",
       tag: "personal",
+      youtubeEmbed:
+        '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx9e6Ldz3n4kXS5h-oM8wm1TVw1mn9S8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      details: [
+        "Features include multiplayer sessions, game rooms for 2 players, and auto-matching.",
+        "Implements enemy waves, boss fights, weapon upgrades, and highscores.",
+      ],
     },
   ];
 
@@ -133,6 +140,23 @@
 
   li {
     margin-bottom: 1.5rem;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    position: relative;
+  }
+
+  li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background-color: rgba(0, 113, 227, 0.2);
   }
 
   a {

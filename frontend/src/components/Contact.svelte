@@ -47,8 +47,8 @@
 
 <style>
   #contact {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
     width: 100%;
   }
