@@ -9,7 +9,7 @@
       url: "https://twitter.com/cmoorelabs/status/1821251020896530828",
       description: "Daily progress on machine learning concepts and projects.",
       tag: "personal",
-      twitterEmbed: `<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Taking inspiration from <a href="https://twitter.com/wateriscoding?ref_src=twsrc%5Etfw">@wateriscoding</a> and starting my 100 day journey<br><br>day 1 of ml:<br> -basics of numpy<br> -used numpy to manipulate an image<br> -inversion, binary thresholding, rotations on sample image<br> -basic convolution function to perform edge detection with Sobel filters <a href="https://t.co/aTXQstsKG0">pic.twitter.com/aTXQstsKG0</a></p>&mdash; cmoorelabs (@cmoorelabs) <a href="https://twitter.com/cmoorelabs/status/1821251020896530828?ref_src=twsrc%5Etfw">August 7, 2024</a></blockquote>`,
+      embedType: "twitter",
     },
     {
       title: "crackdTA - Intelligent Study Assistant",
@@ -23,8 +23,8 @@
       url: "https://github.com/cmooredev/RepoReader",
       description: "NLP-powered code search and analysis tool",
       tag: "personal",
-      youtubeEmbed:
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/gz9-QhpwYTs?si=U1XJ-uDaeZSRryD-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>',
+      embedType: "youtube",
+      embedId: "gz9-QhpwYTs",
     },
     {
       title: "Multiplayer Browser Game",
@@ -32,8 +32,8 @@
       description:
         "Series on creating a multiplayer browser game using Svelte, Express, Socket.IO, and MongoDB.",
       tag: "personal",
-      youtubeEmbed:
-        '<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx9e6Ldz3n4kXS5h-oM8wm1TVw1mn9S8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
+      embedType: "youtube",
+      embedId: "videoseries?list=PLx9e6Ldz3n4kXS5h-oM8wm1TVw1mn9S8n",
       details: [
         "Features include multiplayer sessions, game rooms for 2 players, and auto-matching.",
         "Implements enemy waves, boss fights, weapon upgrades, and highscores.",
@@ -100,15 +100,27 @@
           </div>
         {/if}
 
-        {#if project.youtubeEmbed}
+        {#if project.embedType === "youtube"}
           <div class="youtube-embed-container">
-            {@html project.youtubeEmbed}
+            <iframe
+              src="https://www.youtube.com/embed/{project.embedId}"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
         {/if}
 
-        {#if project.twitterEmbed}
+        {#if project.embedType === "twitter"}
           <div class="twitter-embed-container">
-            {@html project.twitterEmbed}
+            <blockquote class="twitter-tweet">
+              <a
+                href="https://twitter.com/cmoorelabs/status/1821251020896530828"
+              >
+              </a>
+            </blockquote>
           </div>
         {/if}
       </li>
@@ -214,11 +226,20 @@
   }
 
   .youtube-embed-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
     margin-top: 1rem;
+  }
+
+  .youtube-embed-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
   }
 
   @media (max-width: 768px) {
