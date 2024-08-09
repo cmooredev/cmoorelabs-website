@@ -22,7 +22,7 @@
   <div class="nav-links">
     <a href="#home" on:click={scrollToSection}>Home</a>
     <a href="#projects" on:click={scrollToSection}>Projects</a>
-    <a href="#experience" on:click={scrollToSection}>Experience</a>
+    <!-- <a href="#experience" on:click={scrollToSection}>Experience</a> -->
     <a href="#contact" on:click={scrollToSection}>Contact</a>
   </div>
 </nav>
