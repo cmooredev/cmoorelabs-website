@@ -3,8 +3,10 @@
     event.preventDefault();
     const target = event.target.getAttribute("href");
     const targetElement = document.querySelector(target);
+    const remValue =
+      4 * parseFloat(getComputedStyle(document.documentElement).fontSize);
     const offsetPosition =
-      targetElement.getBoundingClientRect().top + window.scrollY;
+      targetElement.getBoundingClientRect().top + window.scrollY - remValue;
     window.scrollTo({ top: offsetPosition, behavior: "smooth" });
   }
 </script>
@@ -17,8 +19,8 @@
   <div class="intro">
     <p>Specializing in web and mobile applications.</p>
     <p>Currently: Lead Front End Developer at Merlyn Labs</p>
-    <a href="#youtube" class="cta-button" on:click={scrollToSection}
-      >Watch My Latest Video</a
+    <a href="#projects" class="cta-button" on:click={scrollToSection}
+      >See My Projects</a
     >
   </div>
 </section>

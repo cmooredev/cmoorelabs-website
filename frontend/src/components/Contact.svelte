@@ -59,7 +59,7 @@
   }
 
   p {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     font-size: 1.1rem;
   }
 
@@ -73,7 +73,7 @@
   }
 
   li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   a {
