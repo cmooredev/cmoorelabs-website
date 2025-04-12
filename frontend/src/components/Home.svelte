@@ -14,59 +14,63 @@
 </script>
 
 <section id="home">
-  <div class="hero-content">
-    <h1 class="hero-title">Connor Moore</h1>
-    <p class="role">
-      Full Stack Engineer & <span class="highlight">ML Enthusiast</span>
-    </p>
-  </div>
-  <div class="intro">
-    <p>
-      Hey! 👋 I build cool stuff with code, from <em>Web3 games</em> to
-      <em>AI tools</em>
-    </p>
-    <p>
-      Currently cooking up something exciting at <span class="highlight"
-        >Auralocked Systems</span
-      >
-    </p>
-    <div class="cta-buttons">
-      <a href="#about" class="cta-button primary" on:click={scrollToSection}
-        >See my work →</a
-      >
-      <a href="#contact" class="cta-button secondary" on:click={scrollToSection}
-        >Let's talk</a
-      >
+  <div class="hero-container">
+    <div class="hero-left">
+      <div class="hero-content">
+        <h1 class="hero-title">Connor Moore</h1>
+        <p class="role">Full Stack Developer</p>
+        <div class="intro">
+          <p>
+            Building end-to-end solutions at <span class="highlight"
+              >Auralocked Systems</span
+            >. From frontend to backend, I help businesses turn ideas into
+            reality.
+          </p>
+        </div>
+      </div>
+      <div class="cta-buttons">
+        <a
+          href="#auralocked"
+          class="cta-button primary"
+          on:click={scrollToSection}>See my work →</a
+        >
+        <a
+          href="#contact"
+          class="cta-button secondary"
+          on:click={scrollToSection}>Let's talk</a
+        >
+      </div>
     </div>
-  </div>
-</section>
 
-<section id="about">
-  <h2>About Me</h2>
-  <div class="about-content">
-    <p>
-      I love turning complex problems into elegant solutions. Whether it's
-      building <em>data pipelines</em>, <em>ML systems</em>, or creating
-      <em>user interfaces</em>, I'm all about making tech that actually helps
-      people get things done.
-    </p>
-    <p>
-      These days, I'm diving deeper into <strong>backend architecture</strong>
-      and
-      <strong>machine learning</strong>, while running
-      <span class="highlight">Auralocked Systems</span> where we help local businesses
-      level up their tech game.
-    </p>
-    <div class="skills">
-      <h3>What I Work With</h3>
-      <ul>
-        <li>Python</li>
-        <li>React/Next.js</li>
-        <li>TypeScript</li>
-        <li>FastAPI</li>
-        <li>AWS</li>
-        <li>Machine Learning</li>
-      </ul>
+    <div class="hero-right">
+      <div class="about-content">
+        <h3>Full Stack Expertise</h3>
+        <div class="specialties">
+          <div class="specialty">
+            <strong>Frontend</strong>
+            <p>React, Svelte, TypeScript, responsive UI/UX</p>
+          </div>
+          <div class="specialty">
+            <strong>Backend</strong>
+            <p>Python, Node.js, APIs, databases</p>
+          </div>
+          <div class="specialty">
+            <strong>DevOps & Cloud</strong>
+            <p>AWS, CI/CD, infrastructure as code</p>
+          </div>
+        </div>
+        <div class="skills">
+          <h4>Tech Stack</h4>
+          <ul>
+            <li>React</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>TypeScript</li>
+            <li>PostgreSQL</li>
+            <li>AWS</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -176,91 +180,100 @@
 <style>
   #home {
     text-align: center;
-    padding: 0;
-    height: calc(100vh - 2rem);
+    padding: 0 1rem;
+    min-height: calc(100vh - 2rem);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
   }
 
   #home p {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #86868b;
+    line-height: 1.6;
+  }
+
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: start;
+  }
+
+  .hero-left {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .hero-right {
+    padding-left: 2rem;
+    border-left: 1px solid #f5f5f7;
   }
 
   .hero-content {
-    margin-top: 0px;
-    top: 0;
-  }
-
-  .hero-title {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
-    color: #333;
-  }
-
-  .role {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #0071e3;
     margin-bottom: 2rem;
   }
 
+  .hero-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 600;
+  }
+
+  .role {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #0071e3;
+    margin-bottom: 1.5rem;
+  }
+
   .intro p {
-    max-width: 600px;
-    margin: 0.5rem auto;
-    color: #86868b;
-  }
-
-  #about,
-  #auralocked,
-  #community {
-    position: relative;
-    margin: 6rem 0;
-    text-align: left;
-    padding-top: 4rem;
-  }
-
-  #about::before,
-  #auralocked::before,
-  #community::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #0071e3, transparent);
-    border-radius: 2px;
-  }
-
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
-    color: #333;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    margin: 1.5rem 0 1rem;
-    color: #333;
-  }
-
-  .about-content,
-  .auralocked-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .about-content p,
-  .auralocked-content p {
-    margin-bottom: 1rem;
+    font-size: 1.1rem;
     line-height: 1.6;
     color: #444;
+  }
+
+  .about-content h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+
+  .about-content h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+  }
+
+  .specialties {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .specialty {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .specialty strong {
     font-size: 1.1rem;
+    color: #0071e3;
+  }
+
+  .specialty p {
+    font-size: 0.95rem;
+    color: #666;
+    margin: 0;
   }
 
   .skills ul {
@@ -268,60 +281,29 @@
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .skills li {
     background: #f5f5f7;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
     color: #666;
-  }
-
-  .features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-
-  .feature {
-    background: #f5f5f7;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-
-  .feature:hover {
-    transform: translateY(-5px);
-  }
-
-  .feature h4 {
-    margin: 0 0 0.5rem 0;
-    color: #333;
-    font-size: 1.2rem;
-  }
-
-  .feature p {
-    margin: 0;
-    color: #666;
-    font-size: 0.9rem;
   }
 
   .cta-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
-    justify-content: center;
+    margin: 2rem 0;
   }
 
   .cta-button {
     display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
     font-weight: 500;
+    font-size: 0.9rem;
     transition: all 0.2s ease;
     text-decoration: none;
   }
@@ -389,43 +371,37 @@
   }
 
   @media (max-width: 768px) {
+    .hero-left {
+      text-align: center;
+      padding-right: 0;
+    }
+
+    .hero-right {
+      padding-left: 0;
+      border-left: none;
+      border-top: 1px solid #f5f5f7;
+      padding-top: 2rem;
+      text-align: center;
+    }
+
     .hero-title {
       font-size: 2.5rem;
     }
 
     .role {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
     }
 
     .intro p {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
-    #home {
-      max-height: -webkit-fill-available;
+    .specialty {
+      align-items: center;
     }
 
-    .features {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-
-    .cta-buttons {
-      flex-direction: column;
-    }
-
-    .value-prop h3 {
-      font-size: 1.5rem;
-    }
-
-    .auralocked-header {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .auralocked-logo {
-      width: 100px;
-      height: 100px;
+    .skills ul {
+      justify-content: center;
     }
   }
 
@@ -495,10 +471,6 @@
     }
   }
 
-  .skills h3 {
-    text-align: center;
-  }
-
   .highlight {
     color: #0071e3;
   }
@@ -509,5 +481,133 @@
 
   strong {
     font-weight: 700;
+  }
+
+  #auralocked {
+    position: relative;
+    margin: 6rem 0;
+    text-align: left;
+    padding-top: 4rem;
+  }
+
+  #auralocked::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #0071e3, transparent);
+    border-radius: 2px;
+  }
+
+  .auralocked-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .auralocked-header h2 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .auralocked-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .auralocked-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .value-prop {
+    margin-bottom: 3rem;
+  }
+
+  .value-prop h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+
+  .value-prop p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+
+  .feature {
+    background: #f5f5f7;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+
+  .feature:hover {
+    transform: translateY(-5px);
+  }
+
+  .feature h4 {
+    margin: 0 0 0.5rem 0;
+    color: #333;
+    font-size: 1.2rem;
+  }
+
+  .feature p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  .cta-container {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .cta-subtext {
+    margin-top: 1rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 768px) {
+    .features {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .auralocked-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .value-prop h3 {
+      font-size: 1.5rem;
+    }
+
+    .value-prop p {
+      font-size: 1rem;
+    }
   }
 </style>
