@@ -1,7 +1,6 @@
 <script>
   import Nav from "./components/Nav.svelte";
   import Home from "./components/Home.svelte";
-  import Projects from "./components/Projects.svelte";
   import Experience from "./components/Experience.svelte";
   import Contact from "./components/Contact.svelte";
 </script>
@@ -10,7 +9,7 @@
   <Nav />
   <Home />
   <hr />
-  <Projects />
+  <Experience />
   <hr />
   <Contact />
 </main>

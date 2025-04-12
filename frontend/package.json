@@ -14,6 +14,8 @@
     "vite": "^5.3.4"
   },
   "dependencies": {
+    "@steeze-ui/heroicons": "^2.4.2",
+    "@steeze-ui/svelte-icon": "^1.6.2",
     "svelte-feather-icons": "^4.1.0"
   }
 }

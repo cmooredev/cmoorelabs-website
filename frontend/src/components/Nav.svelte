@@ -21,8 +21,9 @@
   <div class="logo">cmoorelabs</div>
   <div class="nav-links">
     <a href="#home" on:click={scrollToSection}>Home</a>
-    <a href="#projects" on:click={scrollToSection}>Projects</a>
-    <!-- <a href="#experience" on:click={scrollToSection}>Experience</a> -->
+    <a href="#about" on:click={scrollToSection}>About</a>
+    <a href="#experience" on:click={scrollToSection}>Experience</a>
+    <a href="#auralocked" on:click={scrollToSection}>Auralocked</a>
     <a href="#contact" on:click={scrollToSection}>Contact</a>
   </div>
 </nav>
