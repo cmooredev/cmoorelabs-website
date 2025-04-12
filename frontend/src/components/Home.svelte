@@ -371,6 +371,12 @@
   }
 
   @media (max-width: 768px) {
+    .hero-container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+      padding: 0 1.5rem;
+    }
+
     .hero-left {
       text-align: center;
       padding-right: 0;
@@ -380,28 +386,53 @@
       padding-left: 0;
       border-left: none;
       border-top: 1px solid #f5f5f7;
-      padding-top: 2rem;
-      text-align: center;
+      padding-top: 3rem;
+      text-align: left;
     }
 
     .hero-title {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
 
     .role {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
 
     .intro p {
       font-size: 1rem;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .specialties {
+      gap: 2rem;
+      padding: 0 0.5rem;
     }
 
     .specialty {
-      align-items: center;
+      align-items: flex-start;
+    }
+
+    .skills {
+      margin-top: 2.5rem;
+    }
+
+    .skills h4 {
+      text-align: left;
     }
 
     .skills ul {
+      justify-content: flex-start;
+      margin-top: 1rem;
+    }
+
+    .cta-buttons {
       justify-content: center;
+      margin-top: 2.5rem;
+    }
+
+    #home {
+      padding: 2rem 0;
     }
   }
 
