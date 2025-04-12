@@ -417,6 +417,16 @@
     .value-prop h3 {
       font-size: 1.5rem;
     }
+
+    .auralocked-header {
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .auralocked-logo {
+      width: 100px;
+      height: 100px;
+    }
   }
 
   #community {
