@@ -198,7 +198,9 @@
 
   .cta-button {
     display: inline-block;
-    padding: 0.6rem 1.2rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    padding: 0 1.2rem;
     border-radius: 20px;
     font-weight: 500;
     font-size: 0.9rem;
@@ -271,44 +273,44 @@
   @media (max-width: 768px) {
     .hero-container {
       grid-template-columns: 1fr;
-      gap: 3rem;
-      padding: 0 1.5rem;
+      gap: 4rem;
+      padding: 2rem 1.5rem;
     }
 
     .hero-left {
       text-align: center;
       padding-right: 0;
+      margin-top: 2rem;
     }
 
     .hero-right {
       padding-left: 0;
       border-left: none;
-      border-top: 1px solid #f5f5f7;
-      padding-top: 3rem;
-      text-align: left;
+      padding-top: 0;
+      text-align: center;
     }
 
     .hero-title {
-      font-size: 2.2rem;
+      font-size: 2.5rem;
     }
 
     .role {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
 
     .intro p {
-      font-size: 1rem;
+      font-size: 1.1rem;
       max-width: 500px;
       margin: 0 auto;
     }
 
     .specialties {
       gap: 2rem;
-      padding: 0 0.5rem;
+      align-items: center;
     }
 
     .specialty {
-      align-items: flex-start;
+      align-items: center;
     }
 
     .skills {
@@ -316,11 +318,11 @@
     }
 
     .skills h4 {
-      text-align: left;
+      text-align: center;
     }
 
     .skills ul {
-      justify-content: flex-start;
+      justify-content: center;
       margin-top: 1rem;
     }
 
@@ -330,7 +332,8 @@
     }
 
     #home {
-      padding: 2rem 0;
+      padding: 4rem 0;
+      min-height: auto;
     }
   }
 
