@@ -82,15 +82,16 @@
       alt="Auralocked Systems Logo"
       class="auralocked-logo"
     />
-    <h2>Auralocked Systems</h2>
+    <h2>Founder & CEO, Auralocked Systems</h2>
   </div>
   <div class="auralocked-content">
     <div class="value-prop">
       <h3>Transform Your Business with AI Automation</h3>
       <p>
-        At Auralocked, we help businesses nationwide leverage cutting-edge AI
-        solutions that drive real value. From intelligent automation to custom
-        software development, we're your partner in digital transformation.
+        As founder, I lead our team in delivering cutting-edge AI solutions that
+        drive real value for businesses nationwide. From intelligent automation
+        to custom software development, I personally ensure we deliver
+        transformative results.
       </p>
     </div>
     <div class="features">
@@ -99,8 +100,8 @@
         <p>Custom automation & intelligence</p>
       </div>
       <div class="feature">
-        <h4>Rapid Innovation</h4>
-        <p>Modern tech, faster results</p>
+        <h4>Direct Leadership</h4>
+        <p>Work directly with the founder</p>
       </div>
       <div class="feature">
         <h4>Enterprise Scale</h4>
@@ -111,9 +112,9 @@
       <a
         href="https://auralocked.com"
         target="_blank"
-        class="cta-button primary">Transform Your Business →</a
+        class="cta-button primary">Let's Transform Your Business →</a
       >
-      <p class="cta-subtext">or call (805) 304-3858</p>
+      <p class="cta-subtext">Direct line: (805) 304-3858</p>
     </div>
   </div>
 </section>
