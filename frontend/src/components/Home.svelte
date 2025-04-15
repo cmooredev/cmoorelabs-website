@@ -30,9 +30,9 @@
       </div>
       <div class="cta-buttons">
         <a
-          href="#auralocked"
+          href="https://auralocked.com"
           class="cta-button primary"
-          on:click={scrollToSection}>See my work →</a
+          target="_blank">See my work →</a
         >
         <a
           href="#lets-connect"
