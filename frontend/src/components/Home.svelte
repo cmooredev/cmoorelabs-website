@@ -75,50 +75,6 @@
   </div>
 </section>
 
-<section id="auralocked">
-  <div class="auralocked-header">
-    <img
-      src={auralockedLogo}
-      alt="Auralocked Systems Logo"
-      class="auralocked-logo"
-    />
-    <h2>Founder & CEO, Auralocked Systems</h2>
-  </div>
-  <div class="auralocked-content">
-    <div class="value-prop">
-      <h3>Transform Your Business with AI Automation</h3>
-      <p>
-        As founder, I lead our team in delivering cutting-edge AI solutions that
-        drive real value for businesses nationwide. From intelligent automation
-        to custom software development, I personally ensure we deliver
-        transformative results.
-      </p>
-    </div>
-    <div class="features">
-      <div class="feature">
-        <h4>AI Solutions</h4>
-        <p>Custom automation & intelligence</p>
-      </div>
-      <div class="feature">
-        <h4>Direct Leadership</h4>
-        <p>Work directly with the founder</p>
-      </div>
-      <div class="feature">
-        <h4>Enterprise Scale</h4>
-        <p>Solutions that grow with you</p>
-      </div>
-    </div>
-    <div class="cta-container">
-      <a
-        href="https://auralocked.com"
-        target="_blank"
-        class="cta-button primary">Let's Transform Your Business →</a
-      >
-      <p class="cta-subtext">Direct line: (805) 304-3858</p>
-    </div>
-  </div>
-</section>
-
 <section id="community">
   <h2>Let's Connect</h2>
   <div class="community-content">
@@ -438,8 +394,22 @@
   }
 
   #community {
-    margin: 4rem 0;
+    position: relative;
+    margin: 6rem 0;
     text-align: left;
+    padding-top: 4rem;
+  }
+
+  #community::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #0071e3, transparent);
+    border-radius: 2px;
   }
 
   .community-intro {
@@ -513,133 +483,5 @@
 
   strong {
     font-weight: 700;
-  }
-
-  #auralocked {
-    position: relative;
-    margin: 6rem 0;
-    text-align: left;
-    padding-top: 4rem;
-  }
-
-  #auralocked::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 150px;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #0071e3, transparent);
-    border-radius: 2px;
-  }
-
-  .auralocked-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    width: 100%;
-  }
-
-  .auralocked-header h2 {
-    margin-bottom: 0;
-    font-size: 2rem;
-    color: #333;
-  }
-
-  .auralocked-logo {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-  }
-
-  .auralocked-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .value-prop {
-    margin-bottom: 3rem;
-  }
-
-  .value-prop h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    color: #333;
-  }
-
-  .value-prop p {
-    text-align: center;
-    font-size: 1.1rem;
-    color: #444;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-
-  .features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin: 2rem 0;
-  }
-
-  .feature {
-    background: #f5f5f7;
-    padding: 2rem;
-    border-radius: 12px;
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-
-  .feature:hover {
-    transform: translateY(-5px);
-  }
-
-  .feature h4 {
-    margin: 0 0 0.5rem 0;
-    color: #333;
-    font-size: 1.2rem;
-  }
-
-  .feature p {
-    margin: 0;
-    color: #666;
-    font-size: 0.9rem;
-  }
-
-  .cta-container {
-    text-align: center;
-    margin-top: 3rem;
-  }
-
-  .cta-subtext {
-    margin-top: 1rem;
-    color: #666;
-    font-size: 0.9rem;
-  }
-
-  @media (max-width: 768px) {
-    .features {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-
-    .auralocked-header {
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .value-prop h3 {
-      font-size: 1.5rem;
-    }
-
-    .value-prop p {
-      font-size: 1rem;
-    }
   }
 </style>
