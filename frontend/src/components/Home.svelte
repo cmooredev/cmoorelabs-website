@@ -86,32 +86,32 @@
   </div>
   <div class="auralocked-content">
     <div class="value-prop">
-      <h3>Looking for enterprise-grade tech solutions?</h3>
+      <h3>Transform Your Business with AI Automation</h3>
       <p>
-        At Auralocked, we transform businesses in Simi Valley with custom tech
-        solutions that actually pay for themselves. From automation to cloud
-        infrastructure, we're your local tech partner that gets results.
+        At Auralocked, we help businesses nationwide leverage cutting-edge AI
+        solutions that drive real value. From intelligent automation to custom
+        software development, we're your partner in digital transformation.
       </p>
     </div>
     <div class="features">
       <div class="feature">
-        <h4>Same-Day Response</h4>
-        <p>Tech issues solved fast</p>
+        <h4>AI Solutions</h4>
+        <p>Custom automation & intelligence</p>
       </div>
       <div class="feature">
-        <h4>Fixed Monthly Rates</h4>
-        <p>No surprise bills</p>
+        <h4>Rapid Innovation</h4>
+        <p>Modern tech, faster results</p>
       </div>
       <div class="feature">
-        <h4>No Contracts</h4>
-        <p>Stay because you want to</p>
+        <h4>Enterprise Scale</h4>
+        <p>Solutions that grow with you</p>
       </div>
     </div>
     <div class="cta-container">
       <a
         href="https://auralocked.com"
         target="_blank"
-        class="cta-button primary">Schedule a Free Consultation →</a
+        class="cta-button primary">Transform Your Business →</a
       >
       <p class="cta-subtext">or call (805) 304-3858</p>
     </div>
