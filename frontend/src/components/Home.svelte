@@ -21,10 +21,10 @@
         <p class="role">Full Stack Developer</p>
         <div class="intro">
           <p>
-            Building end-to-end solutions at <span class="highlight"
+            Building AI automation solutions at <span class="highlight"
               >Auralocked Systems</span
-            >. From frontend to backend, I help businesses turn ideas into
-            reality.
+            >. I help businesses nationwide transform operations with custom AI,
+            intelligent automation, and enterprise software.
           </p>
         </div>
       </div>
@@ -35,7 +35,7 @@
           on:click={scrollToSection}>See my work →</a
         >
         <a
-          href="#contact"
+          href="#lets-connect"
           class="cta-button secondary"
           on:click={scrollToSection}>Let's talk</a
         >
@@ -71,65 +71,6 @@
           </ul>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="community">
-  <h2>Let's Connect</h2>
-  <div class="community-content">
-    <div class="community-intro">
-      <p>
-        Follow my journey building AI tools, Web3 games, and tech solutions. I
-        share insights about machine learning, development tips, and
-        behind-the-scenes of my projects.
-      </p>
-    </div>
-    <div class="community-links">
-      <a
-        href="https://github.com/cmooredev"
-        target="_blank"
-        class="social-link github"
-      >
-        <i class="fab fa-github"></i>
-        <div class="social-text">
-          <h4>GitHub</h4>
-          <p>Open source projects</p>
-        </div>
-      </a>
-      <a
-        href="https://twitter.com/cmoorelabs"
-        target="_blank"
-        class="social-link twitter"
-      >
-        <i class="fab fa-twitter"></i>
-        <div class="social-text">
-          <h4>Twitter</h4>
-          <p>Dev updates & insights</p>
-        </div>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/connor-moore-b821a017b/"
-        target="_blank"
-        class="social-link linkedin"
-      >
-        <i class="fab fa-linkedin"></i>
-        <div class="social-text">
-          <h4>LinkedIn</h4>
-          <p>Professional network</p>
-        </div>
-      </a>
-      <a
-        href="https://cmoorelabs.substack.com"
-        target="_blank"
-        class="social-link blog"
-      >
-        <i class="fas fa-pen-fancy"></i>
-        <div class="social-text">
-          <h4>Blog</h4>
-          <p>Tech writing & tutorials</p>
-        </div>
-      </a>
     </div>
   </div>
 </section>
@@ -393,14 +334,14 @@
     }
   }
 
-  #community {
+  #lets-connect {
     position: relative;
     margin: 6rem 0;
     text-align: left;
     padding-top: 4rem;
   }
 
-  #community::before {
+  #lets-connect::before {
     content: "";
     position: absolute;
     top: 0;

@@ -3,122 +3,130 @@
 </script>
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>Feel free to reach out to me on any of these platforms:</p>
-  <ul>
-    <li>
-      <a
-        href="https://twitter.com/cmoorelabs"
-        target="_blank"
-        aria-label="Twitter"
-      >
-        <i class="fab fa-twitter"></i>
-        <span>Twitter</span>
-      </a>
-    </li>
-    <li>
+  <h2>Let's Connect</h2>
+  <div class="community-content">
+    <div class="community-intro">
+      <p>
+        Follow my journey building AI tools, Web3 games, and tech solutions. I
+        share insights about machine learning, development tips, and
+        behind-the-scenes of my projects.
+      </p>
+    </div>
+    <div class="community-links">
       <a
         href="https://github.com/cmooredev"
         target="_blank"
-        aria-label="GitHub"
+        class="social-link github"
       >
         <i class="fab fa-github"></i>
-        <span>GitHub</span>
+        <div class="social-text">
+          <h4>GitHub</h4>
+          <p>Open source projects</p>
+        </div>
       </a>
-    </li>
-    <li>
+      <a
+        href="https://twitter.com/cmoorelabs"
+        target="_blank"
+        class="social-link twitter"
+      >
+        <i class="fab fa-twitter"></i>
+        <div class="social-text">
+          <h4>Twitter</h4>
+          <p>Dev updates & insights</p>
+        </div>
+      </a>
       <a
         href="https://www.linkedin.com/in/connor-moore-b821a017b/"
         target="_blank"
-        aria-label="LinkedIn"
+        class="social-link linkedin"
       >
         <i class="fab fa-linkedin"></i>
-        <span>LinkedIn</span>
+        <div class="social-text">
+          <h4>LinkedIn</h4>
+          <p>Professional network</p>
+        </div>
       </a>
-    </li>
-    <li>
-      <a href="mailto:connor@cmoorelabs.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-        <span>Email</span>
+      <a
+        href="https://cmoorelabs.substack.com"
+        target="_blank"
+        class="social-link blog"
+      >
+        <i class="fas fa-pen-fancy"></i>
+        <div class="social-text">
+          <h4>Blog</h4>
+          <p>Tech writing & tutorials</p>
+        </div>
       </a>
-    </li>
-  </ul>
+    </div>
+  </div>
 </section>
 
 <style>
   #contact {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    text-align: center;
-    width: 100%;
+    position: relative;
+    margin: 3rem 0;
+    text-align: left;
+    padding-top: 1rem;
   }
 
-  h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+  .community-intro {
+    max-width: 600px;
+    margin-bottom: 2rem;
   }
 
-  p {
-    margin-bottom: 1rem;
+  .community-intro p {
     font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
   }
 
-  ul {
-    list-style-type: none;
-    padding: 0;
+  .community-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+  }
+
+  .social-link {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-  }
-
-  li {
-    margin-bottom: 1rem;
-  }
-
-  a {
-    color: #0071e3;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: #f5f5f7;
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
   }
 
-  a:hover {
-    color: #0077ed;
-    background-color: #e5e5e7;
+  .social-link:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #e5e5e7;
   }
 
-  a span {
-    margin-top: 0.5rem;
+  .social-link i {
+    font-size: 1.5rem;
+    color: #0071e3;
+  }
+
+  .social-text h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+  }
+
+  .social-text p {
+    margin: 0.2rem 0 0 0;
     font-size: 0.9rem;
-  }
-
-  i {
-    font-size: 24px;
+    color: #666;
   }
 
   @media (max-width: 768px) {
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
+    .community-links {
+      grid-template-columns: 1fr;
     }
 
-    ul {
-      gap: 1rem;
-    }
-
-    a {
-      padding: 0.75rem;
-      width: 50px;
-      height: 50px;
+    .community-intro p {
+      font-size: 1rem;
     }
   }
 </style>
